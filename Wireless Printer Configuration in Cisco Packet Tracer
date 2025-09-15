@@ -1,0 +1,49 @@
+# Wireless Printer Configuration in Cisco Packet Tracer
+
+
+## Steps to Configure
+
+### 1. Add Devices
+- Open Cisco Packet Tracer.
+- Place the following devices in the workspace:
+  - 1 Wireless PC
+  - 1 Wireless Printer
+  - 1–2 PCs (to test printing)
+  - 1 Access-point
+
+---
+
+
+### 2. Configure Access point
+1. Click on Access-point
+2. Goto Config
+3. Then click on Port1
+4. Enter SSID
+5. Enter WEP key
+
+---
+
+
+### 3. Configure Wireless Printer
+1. Click on the *Wireless Printer*.
+2. Go to Physical.
+3. Attach the Wireless port to the printer.
+4. Enter the *same SSID* (MyNetwork).
+5. Enter the *password* you set on the router.
+6. Assign IP automatically (DHCP) or manually:
+   - Example: 192.168.1.10
+
+---
+
+
+
+### 5. Configure All Devices
+1. Assign IP addresses and Default gateway to all devices via DHCP or static.
+
+
+
+---
+
+## ✅ Final Notes
+- Make sure all devices are on the *same network*.
+- Use DHCP for easier setup.
