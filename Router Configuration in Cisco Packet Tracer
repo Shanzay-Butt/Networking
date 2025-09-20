@@ -1,0 +1,39 @@
+# Today we'll go through the configuration of router in CISCO PACKET TRACER
+
+We can configure a router in two ways:
+    1. By using CLI
+    2. By using CONFIG
+
+# Today we'll do the congfiguration of router using Config tab in router. So let's get started:
+
+
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Configuration of Router >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+1. Select a Router (like ISR4331 ,ISR4321 ,PT-ROUTER ,etc)
+2. Click on it.
+3. Go to the CONFIG option/tab.
+4. Go to the interface option below.
+5. Select the options which resembles with the wire names that you attached between the router and other devices.
+6. Click the port status ON.
+7. Then add IP ADDRESS and SUBNET MASK.
+8. Then same process for the other remaining wires that you attached 
+9. And here the configuration comes to an end and your router is configured.
+
+
+
+
+
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< DEVICES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+1. Select 2 PCs and attach with the router with the help of wires.
+2. Assign IP address to the PCs by clicking on the PCs and going on the Desktop then clicking on the IP configuration.
+3. Then enter the IP ADDRESS and SUBNET MASK and then the DEFAULT GATEWAY which is the one IP ADDRESS you entered during the router ConfiguratioN.
+
+
+
+
+
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< CHECKING THE CONNECTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+1.Check the connection  by sending PDU from one device to another and check whether the message is sent successfully or not.
+2. You can also check the connection by pinging the devices.
+3. For PING click on any device (like PC) and go to the desktop option and from there click on the COMMAND PROMPT .
+4. Then write the following command there ----> ping device_IP_ADDRESS (like ping 192.168.1.10) you have to write the IP ADDRESS of other device.
+5. If the reply came then your connection is successfully established.
