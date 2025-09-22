@@ -1,0 +1,60 @@
+This repository provides a comprehensive guide and configuration examples for designing, setting up, and managing a Wide Area Network (WAN).
+###################### PKT FILE OF CISCO PACKET TRACER IS ATTACHED TOO IN ANOTHER REPO FOR PRACTICAL IMPLEMENTATION ###################
+
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< DEVICES REQUIRED >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+1. Two 1841 or any other routers 
+2. Two switches
+3. Multiple PC's or laptops
+4. Serial DTE wire for connection between both routers
+5. Simple wire for connecting other devices together
+
+
+
+
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SETUP >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+1. Place both routers in the workspace and connect them with the help of SERIAL DTE cable.
+2. Attach one switch with 1st router and the other switch with 2nd router.
+3. Further connect PCS or laptops or other communication devices with both switches according to the switch's capacity.
+
+
+
+
+
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< CONFIGURATION OF DEVICES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// ROUTER CONFIGURATION:
+1. Click on the router and then click on the Config button.
+2. Then find the name of the wire side which is connected with the respective router (like in my case Se0/0/0).
+3. Assign IP Address (like 20.0.0.1) and Subnet Mask (like 255.0.0.0).
+4. Same process for the 2nd router find the name of the wire side for this router (like in my case Se0/0/1).
+5.  Assign IP Address (like 20.0.0.2) and Subnet Mask (like 255.0.0.0) to the 2nd router.
+
+                      /// This above 5 steps configuration is called serial port configuration ///
+
+6. After that go to the Config option again and then find the name of the wire side which is connected with the switch.
+7. Like in my case FastEthernet0/0 for my both routers .
+8. Assign IP Address and Subnet mask in both routers respectively.
+
+
+// PC's Configuration
+1. Click on the PC .
+2. Goto Desktop option.
+3. Click on IP configuration.
+4. Assign IP ADDRESS ,SUBNET MASK, DEfAULT GATEWAY(the one we written in the router (FastEthernet0/0) option.The wire with which the switch is connected).
+5. Remember that the default gateway will be same for all the PCs or laptops that are connected in that particular Router#1 network.
+6. And the PCs or Laptops connected in the Router#2 network will have different default gateway than the Router#1. 
+7. The Router#2 network's PCs or laptops will have that one default gateway that we written in the router (FastEthernet0/0) option in this respective router.
+
+
+
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< CHECKING CONNECTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1.Check the connection  by sending PDU from one device to another and check whether the message is sent successfully or not.
+2. You can also check the connection by pinging the devices.
+3. For PING click on any device (like PC) and go to the desktop option and from there click on the COMMAND PROMPT .
+4. Then write the following command there ----> ping device_IP_ADDRESS (like ping 192.168.1.10) you have to write the IP ADDRESS of other device.
+5. If the reply came then your connection is successfully established.
+
+
+
+
