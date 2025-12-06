@@ -1,0 +1,87 @@
+<<<<<<<<<<<<<<<<<<<<<<<< ABOUT SMTP >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+SMTP (Simple Mail Transfer Protocol) is the standard protocol used to send emails across the Internet.
+
+<<<<<<<<<<<<<<<<<<<<<<<< Key points about SMTP: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+SMTP works on port 25 by default (unencrypted).
+
+Secure SMTP works on:
+---> Port 465 (SMTPS – implicit TLS)
+---> Port 587 (Submission – STARTTLS)
+
+SMTP is only for sending emails.Receiving emails uses POP3/IMAP.
+
+*******Devices like routers, servers, or monitoring systems often use SMTP to send:*******
+---> Alerts
+---> Logs
+---> Notifications
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< IMPLEMENTATION OF SMTP ON CISCO PACKET TRACER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+⭐ Step 1: Place a Server in Packet Tracer
+   1. Go to End Devices
+   2. Select PCs ,Laptop , Router
+   3. Drag Server onto the workspace
+
+⭐ Step 2: Assign IP Address to the Server
+   1. Click the server
+   2. Go to Desktop tab → IP Configuration
+   3. Enter details like:
+                    IP: 192.168.1.10
+                    Subnet Mask: 255.255.255.0
+                    Gateway: 192.168.1.1
+                    DNS: 192.168.1.10 (optional)
+   4. Assign Ip addresses to other devices like PCs & Laptops 
+   5. Go to Desktop tab → IP Configuration
+   6. Enter details like:
+                    IP: 192.168.1.10
+                    Subnet Mask: 255.255.255.0
+                    Gateway: 192.168.1.1
+                    DNS: 192.168.1.10 (optional)
+  7. For Router click on router .
+  8. Go to config tab then Click on FastEthernet0/0 from the list.
+  9. Tick the "on" checkbox and then enter IP Address and Subnet Mask.
+
+⭐ Step 3: Enable SMTP Service
+    1. Click on the server
+    2. Go to Services tab
+    3. Select Email
+           You’ll see:
+            1. SMTP
+            2. POP3
+               Turn SMTP ON
+               Enable POP3 if you want to receive mail too (OPTIONAL)
+
+⭐ Step 4: Add Users/Email Accounts on the Server
+    1. Still in Services → Email
+    2. Under User List, add users:
+Example:
+Username: ali
+Password: 123
+
+Another:
+Username: ahmad
+Password: 123
+
+
+These will become:
+ali@yourdomain.com
+bob@yourdomain.com
+
+
+⭐ Step 5: Ping Devices 
+       1. Click the PC
+       2. Go to Desktop
+       3. Open Command Prompt
+       4. Type:
+             ping <IP-address>
+
+Example:
+ping 192.168.1.1
+This sends ICMP echo requests to check connectivity.
+
+
+⭐ Step 6: Send PDU
+       Send PDU from one device to another and see if the PDU is sent successfully or not.
+
