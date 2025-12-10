@@ -1,0 +1,71 @@
+The Domain Name System (DNS) is the internet’s directory service that translates human-readable domain names (like google.com) into IP addresses 
+that computers use to identify each other on networks.Think of DNS as the “phonebook of the internet.”
+
+ <<<<<<<<<<<<<<<<<<<<<< 🌍 Importance of DNS >>>>>>>>>>>>>>>>>>>>>>>
+1. Without DNS, the internet would be extremely hard to use—everyone would need to memorize IPs.
+2. Modern DNS services provide malware blocking, phishing protection, and encryption.
+3. Allows billions of devices and websites to interact seamlessly.
+4. Email, cloud apps, e-commerce, streaming—all rely on DNS.
+
+
+<<<<<<<<<<<<<<<<<<<<<< ⭐ Pros of DNS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+1. Users can type simple names instead of long numeric IP addresses.
+2. Designed to handle billions of domain lookups every day across the world.
+3. DNS caching speeds up repeated visits to websites.
+
+<<<<<<<<<<<<<<<<<<<<<< ⚠️ Cons of DNS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+1. DNS spoofing, cache poisoning, and DDoS attacks can disrupt service.
+2. If DNS fails (locally or globally), users cannot access websites—even if servers are online.
+3. Large organizations require careful DNS management to avoid downtime.
+
+
+
+<<<<<<<<<<<<<<<<<<<< Steps to Implement DNS in CISCO Servers >>>>>>>>>>>>>>>>>>
+
+******************** STEP # 1 "ASSIGNING IP ADDRESSES" ************************
+
+1. Select 2 servers and 1 PC.
+2. Assign IP addresses and Subnet mask to both servers and PC.
+3. For assigning IP addresses and Subnet mask click on the device then go to Desktop Tab and then Click on Ip configuration and then enter the respective things.
+4. Also Enter the DNS Server on all the devices the one that you entered as an IP address of DNS server.
+
+
+
+******************** STEP # 2 " MAKE A WEBSITE ON WEB SERVER" ************************
+
+1. To make a website click on web server.
+2. Go to SERVICES tab .
+3. Go to HTTP .
+4. Click on "ON" button for both HTTP & HTTPS.
+5. Then at the last click on New File.
+6. Or you can edit the already present "index.html" file at the end  by clicking on edit.
+7. Then write your desire html code.
+8. Then save it , if it shows the overwrite message then click yes and then cross that from the upper right corner of that tab.
+
+
+******************** STEP # 3 " Implementing DNS " ************************
+
+1. Now go to the second server and implement DNS on it.
+2. To implement DNS , click on the DNS server and then go to SERVICES tab.
+3. Click on DNS from the services .
+4. Then Click on "ON" button to enable "DNS Service".
+5. Then write random name like "www.abc.com".
+6. Then write ip address of web server in Address option.
+7. Then click on "Add".
+8. Then click on "Save".
+
+
+******************** STEP # 4 " Accessing website through PC " ************************
+1. Now to access the website we made on WEB Server.
+2. Click on PC & go to Desktop Tab.
+3. Then click on Web Browser.
+4. Write the name you write during DNS implementation like "www.abc.com" on the URL.
+5. Click on "GO".
+6. And you will see the content of your website!!!!!
+
+
+In this setup, DNS does two main things:
+ -----> It maps your domain name to your web server’s IP
+------> So when someone types www.yourdomain.com, DNS tells the browser:
+            “The website is hosted at the IP address 192.168.X.X” 
+We don't have to remember the Ip Addresses!!!
